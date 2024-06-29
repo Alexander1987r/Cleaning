@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.svg" type="image/svg+xml">
+
+    <!--
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.8.0/nouislider.min.css">
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.css">
+    <link rel="stylesheet" href="lib/styleTwenty/twentytwenty.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Cleaning</title>
+</head>
+<body>
+
+ <header class="header">
+  <div class="container header__container">
+   <nav class="navigation">
+     <a class="logo" href="#">
+      <img class="logo__image" src="images/header/logo.svg" alt="Логотип" width="33" height="43">
+      <div class="logo__title">
+        Soft Clean
+        <span class="logo__subtitle">
+          Бережная уборка помещений
+        </span>
+      </div>
+     </a>
+     <span class="navigation__address">
+      г.Пермь
+     </span>
+     <div class="navigation__phone">
+     <a class="navigation__phone-link" href="tel:88007006050">
+      8-800-700-60-50
+     </a>
+     <span class="navigation__phone-text">
+      ПН-ПТ с 10:00 до 18:00
+     </span>
+     </div>
+     <ul class="navigation__list">
+      <li class="navigation__item">
+        <a class="navigation__link navigation__link_watsapp" href="#"></a>
+      </li>
+      <li class="navigation__item">
+        <a class="navigation__link navigation__link_teleg" href="#"></a>
+      </li>
+     </ul>
+     <button class="navigation__button main-button button-order" type="button">
+      Заказать уборку
+     </button>
+
+     <div class="navigation__mobile">
+      <a class="logo" href="#">
+        <img class="logo__image" src="images/header/logo.svg" alt="Логотип" width="33" height="43">
+        <div class="logo__title">
+          Soft Clean
+          <span class="logo__subtitle">
+            Бережная уборка помещений
+          </span>
+        </div>
+      </a>
+      <span class="navigation__address">
+        г.Пермь
+      </span>
+      <div class="navigation__phone">
+        <a class="navigation__phone-link" href="tel:88007006050">
+         8-800-700-60-50
+        </a>
+        <span class="navigation__phone-text">
+         ПН-ПТ с 10:00 до 18:00
+        </span>
+      </div>
+      <ul class="navigation__list">
+         <li class="navigation__item">
+           <a class="navigation__link navigation__link_watsapp" href="#"></a>
+         </li>
+         <li class="navigation__item">
+           <a class="navigation__link navigation__link_teleg" href="#"></a>
+         </li>
+      </ul>
+      <button class="navigation__button main-button button-order" type="button">
+        Заказать уборку
+       </button>
+     </div>
+   </nav>
+   <button class="header__burger" type="button">
+    <span class="header__burger-content">
+    </span>
+   </button>
+  </div>
+ </header>
+
+ <main class="main">
+  <section class="promo">
+    <div class="container promo__container">
+      <h1 class="promo__title">
+       УБОРКА КВАРТИР, ОФИСОВ, КОТТЕДЖЕЙ <br>
+       В ПЕРМИ
+      </h1>
+      <span class="promo__image">
+      </span>
+      <ul class="promo__list">
+         <li class="promo__item">
+          гарантия качества
+          <b>по договору</b>
+         </li>
+         <li class="promo__item">
+          убрано более
+          <b>535 объектов</b>
+         </li>
+         <li class="promo__item">
+           от
+          <b>80₽/м²</b>
+         </li>
+      </ul>
+      <form class="form promo__form form-out" autocomplete="off">
+        <p class="form__title">
+          Оставьте заявку <br>
+          и  получите подарок
+        </p>
+        <div class="form__content">
+          <input class="form__input"  type="text" id="phone1" name="phone1" placeholder="+7 900 777 55 55" required>
+          <button class="form__submit main-button" type="submit">
+            Оставить заявку
+          </button>
+        </div>
+        <span class="form__text">
+          Отправляя заявку, вы принимаете условия соглашения и обработки персональных данных
+        </span>
+      </form>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+     <h2 class="advantages__title title">
+      Почему <span>выбирают нас</span>
+     </h2>
+     <ul class="advantages__list">
+      <li class="advantages__item">
+        <div class="advantages__item-title">
+          <span class="advantages__item-icon advantages__item-icon_first">
+          </span>
+          Соблюдаем  санитарные нормы
+        </div>
+        <p class="advantages__item-text">
+          Мы используем только <br> сертифицированные средства и методы уборки
+        </p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__item-title">
+          <span class="advantages__item-icon advantages__item-icon_second">
+          </span>
+          Профессионализм  и опыт
+        </div>
+        <p class="advantages__item-text">
+          Наши специалисты обладают высокой квалификацией и опытом в области клининга
+        </p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__item-title">
+          <span class="advantages__item-icon advantages__item-icon_third">
+          </span>
+          Гибкий график
+        </div>
+        <p class="advantages__item-text">
+          Мы работаем по вашему расписанию, предлагая услуги в удобное для вас время
+        </p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__item-title">
+          <span class="advantages__item-icon advantages__item-icon_four">
+          </span>
+          Качество гарантировано
+        </div>
+        <p class="advantages__item-text">
+          Работаем по договору, обеспечиваем высокий стандарт качества во всех наших услугах
+        </p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__item-title">
+          <span class="advantages__item-icon advantages__item-icon_five">
+          </span>
+          Конкурентные цены
+        </div>
+        <p class="advantages__item-text">
+          Предлагаем цены без скрытых платежей, наши услуги доступны для широкого круга клиентов
+        </p>
+      </li>
+      <li class="advantages__item">
+        <div class="advantages__item-title">
+          <span class="advantages__item-icon advantages__item-icon_six">
+          </span>
+          Современное оборудование
+        </div>
+        <p class="advantages__item-text">
+          Используем профессиональное оборудование, которое обеспечивает эффективную и качественную уборку
+        </p>
+      </li>
+
+      <li class="advantages__item advantages__item_image">
+        <picture>
+          <source srcset="images/advantages/bg-desk.png" media="(min-width: 1920px)">
+          <source srcset="images/advantages/bg-tablet.png" media="(min-width: 768px)">
+          <img class="advantages__item-image" src="images/advantages/bg.png" alt="Фото блока"
+          width="205" height="205">
+        </picture>
+      </li>
+
+     </ul>
+    </div>
+  </section>
+  <section class="services additionally" id="services">
+    <div class="container">
+     <h2 class="services__title title">
+      Наши <span>услуги</span>
+     </h2>
+     <ul class="services__list">
+      <li class="services__item">
+        <h3 class="services__item-title services__item-title_first">
+          Квартира <span>от 80р/м2</span>
+        </h3>
+        <div class="services__wrapper">
+          <p class="services__text">
+            Мы оказываем профессиональные услуги по уборке квартир. Наша команда внимательно выслушает ваши пожелания и потребности, чтобы каждый уголок вашего дома был убран так, как вы хотите.
+          </p>
+          <div class="services__inner">
+            <span>от 2 сотрудников</span>
+            <span>от 2 часов</span>
+            <button class="main-button services__button button-order" type="button">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="services__item">
+        <h3 class="services__item-title services__item-title_second">
+          Офис <span> от 95р/м2</span>
+        </h3>
+        <div class="services__wrapper">
+          <p class="services__text">
+            Наша опытная команда обеспечит всестороннюю уборку вашего офиса, включая мойку полов, очистку поверхностей, уборку мебели, окон
+            и санитарных помещений.
+          </p>
+          <div class="services__inner">
+            <span>от 2 сотрудников</span>
+            <span>от 2 часов</span>
+            <button class="main-button services__button button-order" type="button">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="services__item">
+        <h3 class="services__item-title services__item-title_third">
+          Коттедж <span> от 100р/м2</span>
+        </h3>
+        <div class="services__wrapper">
+          <p class="services__text">
+            Мы предлагаем широкий спектр <br> услуг, включая уборку всех помещений, мойку окон, чистку ковров, уход за сантехникой и многое другое.
+          </p>
+          <div class="services__inner">
+            <span>от 4 сотрудников</span>
+            <span>от 4 часов</span>
+            <button class="button-order main-button services__button" type="button">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </li>
+      <li class="services__item">
+        <h3 class="services__item-title services__item-title_four">
+          Таунхаус <span> от 100р/м2</span>
+        </h3>
+        <div class="services__wrapper">
+          <p class="services__text">
+            Наша компания использует только самые эффективные средства и инновационное оборудование, мы гарантируем идеальный результат нашей работы.
+          </p>
+          <div class="services__inner">
+            <span>от 3 сотрудников</span>
+            <span>от 3 часов</span>
+            <button class="button-order main-button services__button" type="button">
+              Оставить заявку
+            </button>
+          </div>
+        </div>
+      </li>
+     </ul>
+     <p class="additionally__title">
+      Дополнительно Вы можете заказать у нас
+     </p>
+     <div class="additionally__list ">
+        <div class="additionally__item additionally__item_first">
+          <p class="additionally__text">
+            Мойка холодильника
+          </p>
+          <b class="additionally__price">
+            600 ₽
+          </b>
+        </div>
+        <div class="additionally__item additionally__item_second">
+          <p class="additionally__text">
+            Мойка микроволновки
+          </p>
+          <b class="additionally__price">
+            400 ₽
+          </b>
+        </div>
+        <div class="additionally__item additionally__item_third">
+          <p class="additionally__text">
+            Мойка варочной панелии
+          </p>
+          <b class="additionally__price">
+            400 ₽
+          </b>
+        </div>
+        <div class="additionally__item additionally__item_four">
+          <p class="additionally__text">
+            Мойка духовки
+          </p>
+          <b class="additionally__price">
+            500 ₽
+          </b>
+        </div>
+        <div class="additionally__item additionally__item_five">
+          <p class="additionally__text">
+            Мойка потолков
+          </p>
+          <b class="additionally__price">
+            от 35 ₽/м2
+          </b>
+        </div>
+        <div class="additionally__item additionally__item_six">
+          <p class="additionally__text">
+            Мойка вытяжки
+          </p>
+          <b class="additionally__price">
+            500 ₽
+          </b>
+        </div>
+        <div class="additionally__item additionally__item_seven">
+          <p class="additionally__text">
+            Уборка на балконе
+          </p>
+          <b class="additionally__price">
+            от 1000 ₽
+          </b>
+        </div>
+        <div class="additionally__item additionally__item_eight">
+          <p class="additionally__text">
+            Смена постельного белья
+          </p>
+          <b class="additionally__price">
+            от 200 ₽
+          </b>
+        </div>
+     </div>
+     <button class="additionally__button" type="button">
+      Показать все
+     </button>
+    </div>
+  </section>
+  <section class="stock">
+    <div class="container stock__container">
+      <h2 class="visually-hidden">
+        stock
+      </h2>
+        <img class="stock__image" src="images/stock/stock.png" alt="Логотип секции" width="272" height="122">
+      <div class="stock__inner">
+        <p class="stock__text">
+          Закажите 3 дополнительные услуги
+          <span>
+            и получите четвёртую в подарок
+          </span>
+        </p>
+        <button class="stock__button button-order" type="button">
+          Оставить заявку
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--
+  <section class="cost" id="cost">
+    <div class="container cost__container">
+      <h2 class="cost__title title">
+        Узнайте <span>предварительную стоимость
+        </span>  уборки с помощью калькулятора расчета
+      </h2>
+      <p class="cost__text">
+        Заказать клининговые услуги  можно <br>  через наш сайт. <br>Отправьте заявку или сделайте онлайн расчёт в калькуляторе.Менеджер перезвонит Вам в течение 10 минут
+      </p>
+      <form class="cost__form form-out" autocomplete="off">
+        <fieldset class="cost__field type">
+          <legend class="type__legend">
+            Вид помещения
+          </legend>
+          <label class="type__label">
+            <img class="type__image" src="images/cost/form-1.jpg" alt="photo" width="148"
+            height="148">
+            <span class="type__label-wrap">
+              <input class="type__input" name="input-radio" type="radio" checked>
+              <span class="type__mark">
+              </span>
+              <span class="type__text">
+                Квартира
+              </span>
+            </span>
+          </label>
+          <label class="type__label">
+            <img class="type__image" src="images/cost/form-2.jpg" alt="photo" width="148"
+            height="148">
+            <span class="type__label-wrap">
+              <input class="type__input" name="input-radio" type="radio">
+              <span class="type__mark">
+              </span>
+              <span class="type__text">
+                Офис
+              </span>
+            </span>
+          </label>
+          <label class="type__label">
+            <img class="type__image" src="images/cost/form-3.jpg" alt="photo" width="148"
+            height="148">
+            <span class="type__label-wrap">
+              <input class="type__input" name="input-radio" type="radio">
+              <span class="type__mark">
+              </span>
+              <span class="type__text">
+                Коттедж
+              </span>
+            </span>
+          </label>
+          <label class="type__label">
+            <img class="type__image" src="images/cost/form-4.jpg" alt="photo" width="148"
+            height="148">
+            <span class="type__label-wrap">
+            <input class="type__input" name="input-radio" type="radio">
+              <span class="type__mark">
+              </span>
+              <span class="type__text">
+                Таунхаус
+              </span>
+            </span>
+          </label>
+        </fieldset>
+        <fieldset class="cost__field style">
+          <legend class="style__legend">
+            Тип уборки
+          </legend>
+          <label class="style__label">
+            <img class="style__image" src="images/cost/style-1.jpg" alt="photo" width="54" height="54">
+            <span class="style__label-wrap">
+              <input class="style__input" name="input-radio" type="checkbox" checked>
+              <span class="style__mark">
+              </span>
+              <span class="style__content">
+                Утром или вечером
+                <span class="style__text">
+                  Полная ежедневная уборка
+                </span>
+              </span>
+            </span>
+          </label>
+          <label class="style__label">
+            <img class="style__image" src="images/cost/style-2.jpg" alt="photo" width="54" height="54">
+            <span class="style__label-wrap">
+              <input class="style__input" name="input-radio" type="checkbox" >
+              <span class="style__mark">
+              </span>
+              <span class="style__content">
+                Поддержка чистоты
+                <span class="style__text">
+                  Уборка в течение рабочего дня
+                </span>
+              </span>
+            </span>
+          </label>
+          <label class="style__label">
+            <img class="style__image" src="images/cost/style-3.jpg" alt="photo" width="54" height="54">
+            <span class="style__label-wrap">
+              <input class="style__input" name="input-radio" type="checkbox">
+              <span class="style__mark">
+              </span>
+              <span class="style__content">
+                Комплексная
+                <span class="style__text">
+                  Утро/вечер + поддержка
+                </span>
+              </span>
+            </span>
+          </label>
+          <label class="style__label">
+            <img class="style__image" src="images/cost/style-4.jpg" alt="photo" width="54" height="54">
+            <span class="style__label-wrap">
+              <input class="style__input" name="input-radio" type="checkbox">
+              <span class="style__mark">
+              </span>
+              <span class="style__content">
+                Генеральная
+                <span class="style__text">
+                  После переезда или корпоратива
+                </span>
+              </span>
+            </span>
+          </label>
+          <label class="style__label">
+            <img class="style__image" src="images/cost/style-5.jpg" alt="photo" width="54" height="54">
+            <span class="style__label-wrap">
+              <input class="style__input" name="input-radio" type="checkbox">
+              <span class="style__mark">
+              </span>
+              <span class="style__content">
+                После ремонта
+                <span class="style__text">
+                  Включает в себя вывоз строительного мусора
+                </span>
+              </span>
+            </span>
+          </label>
+          <label class="style__label">
+            <img class="style__image" src="images/cost/style-6.jpg" alt="photo" width="54" height="54">
+            <span class="style__label-wrap">
+              <input class="style__input" name="input-radio" type="checkbox">
+              <span class="style__mark">
+              </span>
+              <span class="style__content">
+                Экспресс-уборка
+                <span class="style__text">
+                  Срочная уборка с выездом в течение часа
+                </span>
+              </span>
+            </span>
+          </label>
+        </fieldset>
+        <fieldset class="square">
+          <div class="square__wrapper">
+            <div class="square__inner">
+              <div class="square__legend">
+                Примерная площадь
+              </div>
+              <label class="square__label">
+                <input class="square__input" type="number" placeholder="30">
+                м
+              </label>
+            </div>
+            <div class="square__wrapper-slide">
+              <div class="square__slider"></div>
+              <div class="square__numbers">
+                <span>&lt;30 </span>
+                <span>40 </span>
+                <span>60</span>
+                <span>80</span>
+                <span>100</span>
+                <span>120</span>
+                <span>140</span>
+                <span>150&gt; </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="square__result">
+            2 400 руб
+            <span class="square__result-text">
+              примерная стоимость уборки
+            </span>
+          </div>
+        </fieldset>
+        <fieldset class="cost__order">
+          <div class="order">
+            <p class="order__legend">
+              Оставьте заявку
+             и получите подарок
+            </p>
+            <input class="order__input" type="text" id="phone2" name="phone2" placeholder="+7 900 777 55 55" required>
+            <button class="main-button order__button" type="submit">
+              Оставить заявку
+            </button>
+            <span class="order__text">
+              Отправляя заявку, вы принимаете условия <br> соглашения  и обработки персональных данных
+            </span>
+          </div>
+          <p class="cost__order-text">
+            Указана примерная стоимость, подробнее уточняете по телефону или оставьте заявку на сайте. Условия могут быть другими, если Ваше помещение имеет нестандартную конструкцию.
+          </p>
+          <div class="order-address">
+            <a class="order-address__link" href="tel:88007006050">
+              8-800-700-60-50
+            </a>
+            <span class="order-address__text">
+              ПН-ПТ с 10:00 до 18:00
+            </span>
+          </div>
+          <ul class="order-social">
+            <li class="order-social__item">
+              <a class="order-social__link order-social__link_wat" href="#"></a>
+            </li>
+            <li class="order-social__item">
+              <a class="order-social__link order-social__link_teleg" href="#"></a>
+            </li>
+          </ul>
+        </fieldset>
+      </form>
+
+    </div>
+  </section>
+  -->
+  <section class="description">
+    <div class="container description__container">
+     <h2 class="description__title title">
+      Доставляем Вам <span>чистоту
+      </span> и порядок
+     </h2>
+     <picture>
+      <source srcset="images/desk/image-desk.png" media="(min-width: 1920px)">
+      <img class="description__image" src="images/desk/image.png" alt="Photo" width="298" height="228">
+    </picture>
+     <div class="description__cards">
+      <div class="description__card">
+        <p class="description__card-title">
+          Постоянные <br> сотрудники
+        </p>
+        <span class="description__card-text">
+          Ваш офис будут чистить одни и те же специалисты, а не случайные люди
+        </span>
+      </div>
+      <div class="description__card">
+        <p class="description__card-title">
+          Современное <br> оснащение
+        </p>
+        <span class="description__card-text">
+          Подбираем лучшие чистящие средства и технику под специфику помещения
+        </span>
+      </div>
+      <div class="description__card">
+        <p class="description__card-title">
+          Удобство <br> и надежность
+        </p>
+        <span class="description__card-text">
+          Личный менеджер, опрятные клинеры, страховка на 10 миллионов рублей
+        </span>
+      </div>
+     </div>
+    </div>
+  </section>
+  <section class="steps" id="steps">
+    <div class="container steps__container">
+      <h2 class="steps__title title">
+        <span>Три шага</span> до чистоты
+      </h2>
+      <ul class="steps__list">
+        <li class="steps__item">
+          <img class="steps__image" src="images/step/step-1.svg" alt="Photo steps" width="172" height="120">
+          <h3 class="steps__item-title steps__item-title_first">
+            Узнайте цену
+          </h3>
+          <p class="steps__item-text">
+            Укажите площадь квартиры, выберите дату и время. Мгновенно узнайте цену услуги и оставьте заявку
+          </p>
+        </li>
+        <li class="steps__item">
+          <img class="steps__image" src="images/step/step-2.svg" alt="Photo steps" width="172" height="120">
+          <h3 class="steps__item-title steps__item-title_second">
+            Дальше мы всё сделаем <br> сами
+          </h3>
+          <p class="steps__item-text">
+            Мы сами подберём лучших исполнителей и отправим их к вам
+            в нужное время. Вам остаётся открыть дверь. Вы можете покинуть квартиру
+            на время уборки
+          </p>
+        </li>
+        <li class="steps__item">
+          <img class="steps__image" src="images/step/step-3.svg" alt="Photo steps" width="172" height="120">
+          <h3 class="steps__item-title steps__item-title_third">
+            Наслаждайтесь чистотой
+          </h3>
+          <p class="steps__item-text">
+            Исполнители сами знают, что им нужно делать — они работают по чёткому чек-листу. Если вы прикрепили карту, то все взаиморасчёты мы проведём за вас
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="gift">
+    <div class="container gift__container">
+      <h2 class="gift__title">
+        Выберите подарок и закажите
+        бережную уборку,<br> <span>без наценок
+          и скрытых платежей</span>
+      </h2>
+      <ul class="gift__cards">
+        <li class="gift__card gift__card_first">
+          <h3 class="gift__card-title">
+            Скидка 10% при первом заказе
+          </h3>
+          <p class="gift__card-text">
+            Действует на все пакеты услуг
+          </p>
+          <button class="main-button gift__button button-order" type="button">Оставить заявку</button>
+        </li>
+        <li class="gift__card gift__card_second">
+          <h3 class="gift__card-title">
+            Бесплатная мойка плиты
+          </h3>
+          <p class="gift__card-text">
+            При заказе в дневное время суток
+          </p>
+          <button class="main-button gift__button button-order" type="button">Оставить заявку</button>
+        </li>
+        <li class="gift__card gift__card_third">
+          <h3 class="gift__card-title">
+            Мойка 2х окон бесплатно
+          </h3>
+          <p class="gift__card-text">
+            При заказе уборки после ремонта
+          </p>
+          <button class="main-button gift__button button-order" type="button">Оставить заявку</button>
+        </li>
+      </ul>
+      <img class="gift__image" src="images/gift/gift.png" alt="Photo gifts" width="145" height="144">
+    </div>
+  </section>
+  <section class="gallery" id="gallery">
+    <div class="container gallery__container">
+     <h2 class="gallery__title title">
+      Выполним уборку любой <span>сложности</span>
+     </h2>
+     <p class="gallery__text">
+      Посмотрите как преображается помещение, <br>
+      даже в самых сложных ситуациях
+     </p>
+     <div class="slider swiper">
+      <div class="slider__wrapper swiper-wrapper">
+        <div class="slider__item swiper-slide">
+          <div class="slider__image-wrapper container-twenty">
+          <img class="slider__image" src="images/gallery/first-do.jpg" alt="Photo pdo" width="340" height="280">
+          <img class="slider__image" src="images/gallery/first-posle.jpg" alt="Photo posle" width="340" height="280">
+          </div>
+          <div class="slider__inner">
+            <h3 class="slider__title">
+              Объект: частный 2х этажный <br> дом
+            </h3>
+            <div class="slider__content">
+              <div class="slider__text">
+                Пакет:
+                <span>
+                 Уборка после ремонта
+                </span>
+              </div>
+              <div class="slider__text">
+                Площадь:
+                <span>
+                  230 м2
+                </span>
+              </div>
+              <div class="slider__text">
+                Сложные загрязнения:
+                <span>
+                  большое количество пыли и цемента на поверхностях
+                </span>
+              </div>
+              <div class="slider__text">
+                Время работы:
+                <span>
+                  11 часов
+                </span>
+              </div>
+              <div class="slider__text">
+                Бригада:
+                <span>
+                  3 человека
+                </span>
+              </div>
+              <div class="slider__text">
+                Стоимость:
+                <b class="slider__text-price">
+                  31 050 руб
+                </b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item swiper-slide">
+          <div class="slider__image-wrapper container-twenty">
+            <img class="slider__image" src="images/gallery/second-do.jpg" alt="Photo do" width="340" height="280">
+            <img class="slider__image" src="images/gallery/second-posle.jpg" alt="Photo posle" width="340" height="280">
+          </div>
+          <div class="slider__inner">
+            <h3 class="slider__title">
+              Объект: двухкомнатная квартира
+            </h3>
+            <div class="slider__content">
+              <div class="slider__text">
+                Пакет:
+                <span>
+                 Генеральная уборка
+                </span>
+              </div>
+              <div class="slider__text">
+                Площадь:
+                <span>
+                  45 м2
+                </span>
+              </div>
+              <div class="slider__text">
+                Сложные загрязнения:
+                <span>
+                   грязь на кухне, жир, въевшаяся грязь на плитке
+                </span>
+              </div>
+              <div class="slider__text">
+                Время работы:
+                <span>
+                  5 часов
+                </span>
+              </div>
+              <div class="slider__text">
+                Бригада:
+                <span>
+                  1 человек
+                </span>
+              </div>
+              <div class="slider__text">
+                Стоимость:
+                <b class="slider__text-price">
+                  4 860 руб
+                </b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item swiper-slide">
+          <div class="slider__image-wrapper container-twenty">
+          <img class="slider__image" src="images/gallery/third-do.jpg" alt="Photo do" width="340" height="280">
+          <img class="slider__image" src="images/gallery/third-posle.jpg" alt="Photo posle" width="340" height="280">
+          </div>
+          <div class="slider__inner">
+            <h3 class="slider__title">
+              Объект: однокомнатная квартира
+            </h3>
+            <div class="slider__content">
+              <div class="slider__text">
+                Пакет:
+                <span>
+                 Генеральная уборка
+                </span>
+              </div>
+              <div class="slider__text">
+                Площадь:
+                <span>
+                  32 м2
+                </span>
+              </div>
+              <div class="slider__text">
+                Сложные загрязнения:
+                <span>
+                   ржавчина, сильный налет на ванне
+                </span>
+              </div>
+              <div class="slider__text">
+                Время работы:
+                <span>
+                  4 часов
+                </span>
+              </div>
+              <div class="slider__text">
+                Бригада:
+                <span>
+                  1 человек
+                </span>
+              </div>
+              <div class="slider__text">
+                Стоимость:
+                <b class="slider__text-price">
+                  3 456 руб
+                </b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item swiper-slide">
+          <div class="slider__image-wrapper container-twenty">
+            <img class="slider__image" src="images/gallery/four-do.jpg" alt="Photo do" width="340" height="280">
+            <img class="slider__image" src="images/gallery/four-posle.jpg" alt="Photo posle" width="340" height="280">
+          </div>
+          <div class="slider__inner">
+            <h3 class="slider__title">
+              Объект: трехкомнатная квартира
+            </h3>
+            <div class="slider__content">
+              <div class="slider__text">
+                Пакет:
+                <span>
+                 Генеральная уборка
+                </span>
+              </div>
+              <div class="slider__text">
+                Площадь:
+                <span>
+                  70 м2
+                </span>
+              </div>
+              <div class="slider__text">
+                Сложные загрязнения:
+                <span>
+                   потеки, въевшийся жир на кафеле кухни
+                </span>
+              </div>
+              <div class="slider__text">
+                Время работы:
+                <span>
+                  3 часов
+                </span>
+              </div>
+              <div class="slider__text">
+                Бригада:
+                <span>
+                  2 человек
+                </span>
+              </div>
+              <div class="slider__text">
+                Стоимость:
+                <b class="slider__text-price">
+                  9 316 руб
+                </b>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__item swiper-slide">
+        <div class="slider__image-wrapper container-twenty">
+          <img class="slider__image" src="images/gallery/five-do.jpg" alt="Photo do" width="340" height="280">
+          <img class="slider__image" src="images/gallery/five-posle.jpg" alt="Photo posle" width="340" height="280">
+        </div>
+        <div class="slider__inner">
+            <h3 class="slider__title">
+              Объект: однокомнатная квартира
+            </h3>
+            <div class="slider__content">
+              <div class="slider__text">
+                Пакет:
+                <span>
+                 Генеральная уборка
+                </span>
+              </div>
+              <div class="slider__text">
+                Площадь:
+                <span>
+                  30 м2
+                </span>
+              </div>
+              <div class="slider__text">
+                Сложные загрязнения:
+                <span>
+                  многолетний нагар на батареях
+                </span>
+              </div>
+              <div class="slider__text">
+                Время работы:
+                <span>
+                  3 часов
+                </span>
+              </div>
+              <div class="slider__text">
+                Бригада:
+                <span>
+                  1 человек
+                </span>
+              </div>
+              <div class="slider__text">
+                Стоимость:
+                <b class="slider__text-price">
+                  3 240 руб
+                </b>
+              </div>
+            </div>
+        </div>
+        </div>
+      </div>
+        <button class="slider__togle slider__togle-prev swiper-button-prev" type="button">
+        </button>
+        <button class="slider__togle slider__togle-next swiper-button-next" type="button">
+        </button>
+        <div class="slider__pagination swiper-pagination">
+        </div>
+        <div class=""></div>
+     </div>
+    </div>
+  </section>
+  <section class="etaps">
+    <div class="container etaps__container">
+    <h2 class="etaps__title title">
+      Как <span>
+        происходит
+      </span>  уборка
+    </h2>
+    <div class="etaps__buttons">
+     <button class="etaps__button etaps__button_active " type="button" data-filter=".bathroom">
+      Ванная комната
+     </button>
+     <button class="etaps__button " type="button" data-filter=".kitchen">
+      Кухня
+     </button>
+     <button class="etaps__button " type="button" data-filter=".bedroom">
+      Спальня
+     </button>
+     <button class="etaps__button " type="button" data-filter=".hallway">
+      Прихожая
+     </button>
+    </div>
+
+    <div class="etaps__list">
+      <div class="etaps__item mix bathroom">
+        <picture>
+          <source srcset="images/etaps/etaps-first-desk.jpg" media="(min-width:1920px)">
+          <source srcset="images/etaps/etaps-first-tablet.jpg" media="(min-width:768px)">
+          <img class="etaps__image" src="images/etaps/etaps-first.png" alt="photo" width="340" height="482">
+        </picture>
+      </div>
+      <div class="etaps__item mix kitchen">
+        <picture>
+          <source srcset="images/etaps/etaps-second-desk.jpg" media="(min-width:1920px)">
+          <source srcset="images/etaps/etaps-second-tablet.jpg" media="(min-width:768px)">
+          <img class="etaps__image" src="images/etaps/etaps-second.png" alt="photo" width="340" height="482">
+        </picture>
+      </div>
+      <div class="etaps__item mix bedroom">
+        <picture>
+          <source srcset="images/etaps/etaps-third-desk.jpg" media="(min-width:1920px)">
+          <source srcset="images/etaps/etaps-third-tablet.jpg" media="(min-width:768px)">
+          <img class="etaps__image" src="images/etaps/etaps-third.png" alt="photo" width="340" height="482">
+        </picture>
+      </div>
+      <div class="etaps__item mix hallway">
+        <picture>
+          <source srcset="images/etaps/etaps-four-desk.jpg" media="(min-width:1920px)">
+          <source srcset="images/etaps/etaps-four-tablet.jpg" media="(min-width:768px)">
+          <img class="etaps__image" src="images/etaps/etaps-four.png" alt="photo" width="340" height="482">
+        </picture>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="price">
+    <div class="container price__container">
+      <h2 class="price__title">
+        Хотите прицениться?
+      </h2>
+      <p class="price__text">
+        Получите актуальный прайс-лист услуг всего в 1 клик
+      </p>
+      <picture class="price__picture">
+        <source srcset="images/price/price-tablet.png" media="(min-width:768px)">
+        <img class="price__image" src="images/price/price.png" alt="Photo price" width="147" height="184">
+      </picture>
+      <form class="price__form form-out" autocomplete="off">
+        <fieldset class="price__form-field">
+          <label class="price__form-label">
+            <input class="input-social" type="radio" name="wats-app">
+            <span class="price__form-social"></span>
+          </label>
+          <label class="price__form-label">
+            <input class="input-social" type="radio" name="wats-app">
+            <span class="price__form-social price__form-social_teleg"></span>
+          </label>
+          <p class="price__form-title">
+            Куда Вам отправить?
+          </p>
+        </fieldset>
+        <input class="price__form-number" type="text" id="phone3" name="phone3" placeholder="+7 900 777 55 55" required>
+        <button class="price__form-button" type="submit">
+          Оставить заявку
+        </button>
+        <span class="price__form-copyright">
+          Отправляя заявку, вы принимаете условия соглашения и обработки персональных данных
+        </span>
+      </form>
+    </div>
+  </section>
+  <section class="questions" id="questions">
+    <div class="container">
+      <h2 class="questions__title">
+        Часто задаваемые вопросы
+      </h2>
+      <div class="questions__list accordion-container">
+        <div class="questions__list-wrapper ac">
+          <h2 class="questions__list-title ac-header">
+            Что нужно, чтобы подготовиться
+            к уборке?
+          </h2>
+          <button type="button" class="questions__list-button ac-trigger">
+          </button>
+          <div class="questions__list-panel ac-panel">
+            <p class="questions__list-text ac-text">
+              Для эффективной уборки рекомендуем подготовиться следующим образом: <br>
+              <span>
+                1. Уберите личные вещи и ценные предметы с поверхностей, которые требуют уборки. <br>
+                2. Если это возможно, освободите пространство от лишних мебельных предметов или крупных объектов. <br>
+                3. При необходимости, убедитесь, что домашние животные находятся в безопасном месте. <br>
+                4. Предоставьте доступ к объектам уборки, включая окна, шкафы и другие закрытые помещения.
+              </span>
+              Не волнуйтесь, наши специалисты готовы к работе с различными условиями и могут адаптироваться к вашему дому или офису для достижения наилучших результатов уборки.
+            </p>
+          </div>
+        </div>
+        <div class="questions__list-wrapper ac">
+          <h2 class="questions__list-title ac-header">
+            Могу ли я быть дома  во время  <br> уборки?
+          </h2>
+          <button type="button" class="questions__list-button ac-trigger">
+          </button>
+          <div class="questions__list-panel ac-panel">
+            <p class=" questions__list-text ac-text">
+              Да, конечно! Мы гибки по отношению к вашим предпочтениям. Если вы предпочитаете быть в доме или офисе во время уборки, мы с удовольствием адаптируемся к вашему графику. Наши профессиональные уборщики обучены работать эффективно и дискретно, чтобы сделать ваше пребывание максимально комфортным. Если у вас есть какие-либо особые инструкции или предпочтения относительно процесса уборки, пожалуйста, сообщите нам заранее, и мы обеспечим вам лучшее обслуживание
+            </p>
+          </div>
+        </div>
+        <div class="questions__list-wrapper ac">
+          <h2 class="questions__list-title ac-header">
+            Сколько времени длится уборка?
+          </h2>
+          <button type="button" class="questions__list-button ac-trigger">
+          </button>
+          <div class="questions__list-panel ac-panel">
+            <p class=" questions__list-text ac-text">
+              Время, необходимое для уборки, зависит от размера и состояния помещения, а также от ваших индивидуальных потребностей. Обычно мы предоставляем оценку времени на основе предварительной консультации или осмотра объекта. Мы стремимся к максимальной эффективности и качеству, поэтому наши профессиональные уборщики работают быстро и тщательно, чтобы минимизировать временные затраты и достичь оптимальных результатов. Если у вас есть конкретные сроки или особые требования, сообщите нам об этом, и мы с удовольствием подстроимся под ваши нужды.
+            </p>
+          </div>
+        </div>
+        <div class="questions__list-wrapper ac">
+          <h2 class="questions__list-title questions__list-title_four ac-header">
+            За сколько дней до приезда клинеров необходимо сделать заказ?
+          </h2>
+          <button type="button" class="questions__list-button ac-trigger">
+          </button>
+          <div class="questions__list-panel ac-panel">
+            <p class=" questions__list-text ac-text">
+              Рекомендуем делать заказ на уборку заранее, чтобы обеспечить наилучшее время и дату для вас. Обычно мы можем предоставить услуги уборки в течение нескольких дней после вашего запроса, но для более гибкого выбора времени и даты рекомендуем связаться с нами заранее. Мы всегда готовы обсудить ваши потребности и найти оптимальное решение для вас. Если у вас возникли срочные потребности, пожалуйста, свяжитесь с нами, и мы постараемся удовлетворить ваш запрос в кратчайшие сроки.
+            </p>
+          </div>
+        </div>
+        <div class="questions__list-wrapper ac">
+          <h2 class="questions__list-title ac-header">
+            Какие моющие средства Вы используете?
+          </h2>
+          <button type="button" class="questions__list-button ac-trigger">
+          </button>
+          <div class="questions__list-panel ac-panel">
+            <p class=" questions__list-text ac-text">
+              Наша компания предпочитает использовать профессиональные моющие средства, которые являются экологически безопасными и имеют низкую степень вредности для здоровья и окружающей среды. Мы стремимся к использованию средств, которые эффективно удаляют загрязнения и бактерии, не оставляя вредных остатков на поверхностях. При необходимости мы можем предоставить информацию о конкретных средствах, которые мы используем, и ответить на ваши вопросы о их составе и безопасности.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ </main>
+<footer class="footer">
+  <div class="container footer__container">
+    <div class="footer__inner">
+      <div class="footer__header">
+         <a class="footer__logo" href="#">
+          <img class="footer__logo-image" src="images/header/logo.svg" alt="Логотип" width="47" height="61">
+          <div class="footer__logo-title">
+            Soft Clean
+            <span class="footer__logo-subtitle">
+              Бережная уборка помещений
+            </span>
+          </div>
+         </a>
+         <span class="footer__header-address">
+          г.Пермь
+         </span>
+
+         <div class="footer__phone">
+         <a class="footer__phone-link" href="tel:88007006050">
+          8-800-700-60-50
+         </a>
+         <span class="footer__phone-text">
+          ПН-ПТ с 10:00 до 18:00
+         </span>
+         </div>
+         <div class="footer__header-social">
+          <a class="footer__header-link" href="#">
+          </a>
+          <a class="footer__header-link footer__header-link_teleg" href="#"></a>
+         </div>
+
+      </div>
+      <nav class="footer__navigation">
+        <ul class="footer__list">
+         <li class="footer__item">
+          <a class="footer__link" href="#services">
+            Услуги
+          </a>
+         </li>
+         <li class="footer__item">
+          <a class="footer__link" href="#gallery">
+            Работы
+          </a>
+         </li>
+         <li class="footer__item">
+          <a class="footer__link" href="#steps">
+            Как происходит уборка
+          </a>
+         </li>
+         <li class="footer__item">
+          <a class="footer__link" href="#">
+            Сертификаты
+          </a>
+         </li>
+         <li class="footer__item">
+          <a class="footer__link" href="#questions">
+            Часто задаваемые вопросы
+          </a>
+         </li>
+        </ul>
+        <a class="footer__navigation-link" href="#cost">
+          Калькулятор расчета
+          стоимости
+        </a>
+      </nav>
+      <form class="footer__form form-out" autocomplete="off">
+        <p class="footer__form-title">
+          Оставьте заявку <br>
+          и получите подарок
+        </p>
+       <input class="footer__form-input" type="text" id="phone4" name="phone4" placeholder="+7 900 777 55 55" required>
+       <button class="footer__form-button" type="submit">
+        Оставить заявку
+       </button>
+       <span class="footer__form-text">
+        Отправляя заявку, вы принимаете условия соглашения и обработки персональных данных
+       </span>
+      </form>
+    </div>
+    <div class="copyright">
+      <p class="copyright__text">
+         <span class="copyright__text-title">
+          Реквизиты:
+         </span>
+      </p>
+      <p class="copyright__link" href="#">
+        Политика конфиденциальности
+      </p>
+    </div>
+  </div>
+</footer>
+
+  <!--Отправка-->
+  <section class="popup" >
+    <div class="popup__wrapper popup-success-wrapper">
+      <h2 class="popup__title popup-success-title">
+        Ваша заявка отправлена!
+      </h2>
+      <p class="popup__text popup-success-text">
+        Мы свяжемся с Вами в течение 10 минут
+        для подбора самых лучших специалистов
+      </p>
+      <div class="popup__contacts">
+       <p class="popup__contacts-text">
+        Если возникли проблемы, напишите
+        или позвоните нам
+       </p>
+       <a class="popup__contacts-phone" href="tel:88007006050">
+        8-800-700-60-50
+       </a>
+       <span class="popup__contacts-work">
+        ПН-ПТ с 10:00 до 18:00
+       </span>
+       <div class="popup__contacts-social">
+        <a class="popup__contacts-link" href="#"></a>
+        <a class="popup__contacts-link" href="#"></a>
+       </div>
+      </div>
+      <picture>
+      <source srcset="images/popup/popup-desk.png" media="(min-width:1920px)">
+      <img class="popup__image" src="images/popup/popup-image.png" alt="popup-photo" width="219"
+      height="219">
+      </picture>
+      <button class="popup__close" type="button">
+        <svg class="popup__close-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16L1 1M16 1L1 16" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </button>
+    </div>
+  </section>
+  <!--Заказ-->
+  <section class="popup popup-order" >
+      <div class="popup__wrapper">
+        <h2 class="popup__title">
+          Оставьте заявку <br>
+          и получите подарок
+        </h2>
+        <p class="popup__text">
+          Мы свяжемся с Вами в течение 10 минут
+          для подбора самых лучших специалистов
+        </p>
+        <form class="popup__form form-out" autocomplete="off">
+          <input class="popup__form-input" type="text" id="phone5" name="phone5"  placeholder="+7 900 777 55 55" required>
+          <button class="popup__form-button" type="submit">
+            Оставить заявку
+          </button>
+          <span class="popup__form-text">
+            Отправляя заявку, вы принимаете условия соглашения и обработки персональных данных
+          </span>
+        </form>
+        <picture>
+        <source srcset="images/popup/popup-desk.png" media="(min-width:1920px)">
+        <img class="popup__image" src="images/popup/popup-image.png" alt="popup-photo" width="219"
+        height="219">
+        </picture>
+        <button class="popup__close" type="button">
+          <svg class="popup__close-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 16L1 1M16 1L1 16" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </button>
+      </div>
+  </section>
+  <!--Политика-->
+  <section class="popup popup-politic">
+    <div class="popup__wrapper">
+      <h2 class="popup__title">
+        Политика конфиденциальности
+      </h2>
+      <p class="popup__text">
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, alias facilis quasi soluta a ea fugit magni natus dolores, dolore animi. Sed ad, consectetur veniam cupiditate explicabo magnam fugit mollitia eaque suscipit aliquid obcaecati cum eligendi et praesentium laborum optio natus perspiciatis tempore eius nam sapiente. Eius doloribus non voluptatibus fugit, mollitia quod quam quibusdam maxime dignissimos, voluptate enim architecto consectetur! Ipsa rerum minima voluptas consectetur vero expedita temporibus. Explicabo totam inventore consequatur modi! Totam molestias iure, voluptas dolorum qui exercitationem ad minus iusto est! Animi beatae atque nesciunt laboriosam illo. Velit, eum quidem assumenda ducimus delectus cum repudiandae odit id adipisci illum voluptatum illo distinctio itaque consectetur animi quae aperiam impedit, exercitationem ratione architecto totam aspernatur? Laborum vitae enim illum ipsa provident. Delectus nihil dolores modi, maxime, eius labore, doloremque nobis dolorum sunt vitae fuga molestiae. Repudiandae aliquam vel inventore obcaecati recusandae in ipsum similique voluptatem ducimus ipsam tenetur doloremque id, voluptas eveniet sunt quod quia nesciunt saepe placeat. Iusto, error. Perferendis asperiores maiores consequatur quam saepe earum. Provident, et impedit possimus, autem sunt, quasi quidem quibusdam accusantium odit cumque pariatur nesciunt ad voluptatem animi vero nam natus perferendis aliquid temporibus doloribus tempore consectetur. Tempora nam porro officia vel repellendus maxime alias dolorem non eum esse, ipsam consectetur sed cum ex magnam optio odit quibusdam expedita sapiente praesentium, et architecto. Quia officia optio sint minima inventore, ipsa vel, provident dignissimos, eligendi odio dolore quae in quam voluptatem blanditiis quas minus ratione quod dolorum necessitatibus quidem tenetur? Nisi aliquid ullam sequi harum consequatur tempora architecto accusantium cupiditate porro? Tempore explicabo eligendi iusto quia animi iure minima dicta aliquid? Quidem quo rem culpa voluptatibus sit natus neque nulla esse. Quam impedit voluptate voluptatem molestias nam suscipit inventore voluptatum recusandae tenetur asperiores nemo veniam dolores, consequatur modi iusto nesciunt qui quo voluptatibus atque fugiat ullam explicabo. Corrupti sunt sit quasi pariatur corporis molestias sint officiis nulla iusto, explicabo autem eligendi reiciendis hic? Accusantium dolores maiores assumenda, non asperiores minus. Distinctio quod vel in nesciunt labore qui voluptatum cupiditate. Odit, laboriosam obcaecati. Aliquid animi hic quod impedit dicta adipisci aliquam! Minima suscipit temporibus soluta culpa natus magni amet. Assumenda laboriosam quos facere maiores non voluptatibus nulla magnam eius nesciunt deserunt eaque veritatis tempore et voluptas, odio repudiandae voluptate unde ipsa obcaecati sit perspiciatis sapiente! Tenetur praesentium illum, inventore fugit qui illo dolores architecto vitae blanditiis libero accusamus quisquam recusandae placeat voluptas maxime nostrum, at in beatae dolorum enim? Ab eveniet odio earum sequi itaque officia distinctio voluptates eligendi fuga, aut autem dolor non cumque qui quam libero sapiente modi, optio a repudiandae fugiat vitae maxime asperiores placeat. Ea et quasi asperiores officia perspiciatis sequi eaque vel, modi eius. Adipisci magni nulla quidem perferendis officiis in harum error veritatis voluptates tempore quibusdam nam distinctio, dolores doloremque neque corporis aliquid ab minus sit quisquam rem consectetur. Beatae numquam velit repellendus esse, ab autem quas doloribus possimus distinctio sapiente obcaecati modi nam dolor exercitationem ipsam dolorem et eum? Adipisci, dolor. Est, necessitatibus. Temporibus corrupti placeat accusamus consequatur aliquam, cumque perferendis consectetur beatae dignissimos dolore eligendi natus nihil officiis distinctio modi, reiciendis porro voluptas odit sed? Rerum similique expedita facere officiis alias veritatis ad maiores repudiandae perferendis deserunt. Dolorum, laboriosam nulla debitis esse ipsa commodi odio tempora! Quidem, eligendi iste sequi consequatur officiis aliquam soluta in eveniet mollitia distinctio nemo? Corrupti aliquam perferendis placeat praesentium cupiditate, ut veritatis aut nobis consectetur voluptas deleniti assumenda similique non sequi molestiae alias quod neque eveniet? Molestias neque hic odit unde illum impedit, quisquam ad. Libero obcaecati itaque quae deleniti tenetur placeat ex totam quis, cum similique sint id quas laudantium maiores praesentium reprehenderit rem nobis perferendis iste nulla adipisci repellendus dignissimos! Vero, corporis. Reiciendis, praesentium. Perferendis voluptatum impedit in eveniet aliquid tenetur, sequi ipsam dolor temporibus architecto ipsum optio quaerat voluptas nobis ut consectetur, voluptatibus et possimus. Omnis excepturi non animi similique incidunt dolore alias aspernatur hic exercitationem corporis quas repellendus facilis officia eum atque beatae, consectetur voluptas enim. Nam dolorum modi autem commodi ipsum iusto veritatis facilis aspernatur quaerat. Enim amet exercitationem omnis perspiciatis nisi mollitia tempora nemo voluptatibus maxime ex, culpa delectus atque odio repudiandae, at iure ducimus sapiente. Vel, ipsa, libero ducimus quam sint fuga nam consectetur ipsum eaque doloribus labore voluptatibus recusandae ullam tempora. Consequatur similique exercitationem facilis eaque modi. Dolore est obcaecati iste minima, nemo, voluptates ullam, consequuntur beatae repudiandae magnam odio rem reiciendis molestiae quaerat distinctio a excepturi. Nostrum, maiores. Nihil eligendi ea dolore iure quo perferendis nesciunt illo consequatur aspernatur a. Excepturi dolorum, facere totam delectus a veniam quaerat explicabo in quasi culpa doloribus eius quisquam iste ducimus alias magni voluptatem. Dignissimos perspiciatis unde quam, consectetur officia minus est repudiandae quae? Amet corporis ad officia reiciendis ipsa placeat laboriosam illo laudantium dignissimos, itaque corrupti deserunt velit suscipit repellat impedit debitis quam, sapiente vitae culpa incidunt accusantium. Necessitatibus consequuntur illo aperiam dolor mollitia. Corporis, id laborum. Nobis, voluptates dolorum molestias exercitationem culpa consequatur quod, laboriosam odit quas nemo aspernatur amet. Impedit ducimus, eum autem ipsum obcaecati perspiciatis itaque id velit ipsa eveniet quod et earum fuga repellendus dolores quaerat, doloremque corrupti, cum eos. Animi, esse beatae? Laudantium, voluptatem animi enim ad deleniti esse, soluta quae sunt qui hic eveniet praesentium quod odit? Omnis, ratione dicta! Placeat perferendis laboriosam natus maxime accusamus facilis quam eveniet saepe praesentium, officia sint aliquid, dignissimos, hic ipsam corrupti fuga odit omnis unde accusantium dolores dolorum maiores quae? Sequi, temporibus deserunt? Pariatur voluptate magnam sequi, incidunt modi dignissimos soluta ullam, maxime nulla atque ipsam aliquid in temporibus. Nihil, recusandae provident. Ratione voluptates dolore ab rem excepturi est culpa obcaecati totam commodi sapiente vero sequi omnis aspernatur, fugiat similique! Earum accusamus animi, ipsa blanditiis quibusdam necessitatibus quam quaerat rem soluta, reprehenderit accusantium fugit omnis eum eius, fugiat consequuntur maiores in commodi neque inventore ratione velit quas dolorem. Ipsum, laudantium sed minus ipsam deleniti incidunt eligendi reiciendis nam delectus, voluptatibus hic, nostrum sunt libero quas facere. Adipisci unde deleniti velit similique, qui debitis fugit voluptatibus minima dolor tempore animi, dolores sunt ex.
+      </p>
+      <button class="popup__close" type="button">
+        <svg class="popup__close-icon" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 16L1 1M16 1L1 16" stroke="#1A1A1A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+      </button>
+    </div>
+  </section>
+
+ <!--
+  <script src="https://cdn.jsdelivr.net/npm/nouislider@15.8.0/dist/nouislider.min.js">
+</script>
+ -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+</script>
+<script src="./lib/mixitup/mixitup.min.js">
+</script>
+<script src="https://unpkg.com/accordion-js@3.3.4/dist/accordion.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript" charset="utf-8">
+</script>
+<script src="./lib/jquery/jquery.event.move.js" type="text/javascript">
+</script>
+<script src="./lib/jquery/jquery.twentytwenty.js" type="text/javascript">
+</script>
+<script src="./lib/jquery/jquery.maskedinput.js" type="text/javascript">
+</script>
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>

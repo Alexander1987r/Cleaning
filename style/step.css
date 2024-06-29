@@ -1,0 +1,90 @@
+.steps {
+  padding:9px 0 60px 0;
+  background-color: #f0f8ff;
+}
+.steps__container{
+  padding: 0 20px;
+}
+.steps__title {
+  margin-bottom: 30px;
+}
+.steps__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.steps__image {
+  width: 172px;
+  height: 120px;
+  margin: 0 auto 14px auto;
+}
+.steps__item-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 14px;
+  position: relative;
+}
+.steps__item-title br {
+ display: none;
+}
+.steps__item-title::before{
+  position: absolute;
+  content: 'ШАГ 1';
+  font-weight: 600;
+  font-size: 12px;
+  color: var(--svetlo-seryy);
+  top: -15px;
+}
+.steps__item-title_second::before{
+  content: 'ШАГ 2';
+}
+.steps__item-title_third::before{
+  content: 'ШАГ 3';
+}
+.steps__item-text {
+  color: var(--seryy);
+}
+@media(min-width:768px){
+  .steps {
+    padding-bottom: 80px;
+  }
+  .steps__container{
+    padding: 0 20px 0 10px;
+  }
+  .steps__title {
+    margin-bottom: 40px;
+  }
+  .steps__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .steps__item:not(:last-child) {
+    margin-bottom:4px;
+  }
+  .steps__image {
+    width: 230px;
+    height: 160px;
+    margin: 0 auto 44px auto;
+  }
+  .steps__item-title {
+    font-size: 22px;
+    margin-bottom:25px;
+  }
+  .steps__item-title br {
+    display: block;
+   }
+  .steps__item-text {
+    max-width: 327px;
+    line-height: 1.7;
+  }
+}
+@media(min-width:1920px){
+  .steps {
+    padding-bottom: 90px;
+  }
+  .steps__container{
+    padding: 0;
+  }
+  .steps__item:not(:last-child) {
+    margin-bottom:0;
+  }
+}

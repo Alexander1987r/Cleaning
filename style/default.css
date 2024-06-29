@@ -1,0 +1,146 @@
+
+:root {
+  --font-family: "Roboto", sans-serif;
+	--zelenyy: #069d48;
+	--goluboy: #2d9aff;
+	--chernyy: #1a1a1a;
+	--seryy: #676767;
+	--svetlo-seryy: #c6c6c6;
+  --white:#fff;
+  scroll-behavior: smooth;
+}
+html{
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,*::before,*::after{
+  box-sizing: inherit;
+}
+
+body{
+  position: relative;
+  overflow-x: hidden;
+  min-width: 360px;
+  min-height: 100vh;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--chernyy);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-font-smoothign:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  text-rendering:optimizeLegibility;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+main{
+  flex: 1;
+}
+img,svg{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+svg{
+  max-height: 100%;
+}
+button{
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+h1,h2,h3,p,figure,fieldset{
+  margin: 0;
+}
+input{
+  padding: 0;
+  border: none;
+}
+fieldset{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0,0,0,0);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.main-button{
+  font-size: 12px;
+  background-color:var(--goluboy);
+  border-radius: 11px;
+  color: var(--white);
+  height: 39px;
+  width: 138px;
+  transition:background-color 1s ease-in-out;
+}
+.main-button:hover{
+  background-color: #006bcd;
+}
+.main-button:active{
+  background-color: #0f4f8a;
+}
+.title{
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+}
+.title span{
+  color: var(--goluboy);
+}
+.container{
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 360px;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+@media(min-width:768px){
+  .main-button{
+    font-size: 16px;
+    width: 190px;
+    height: 53px;
+  }
+  .title{
+    font-size: 40px;
+  }
+  .container{
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+@media(min-width:1920px){
+  .container{
+    width: 1200px;
+    padding: 0;
+  }
+}

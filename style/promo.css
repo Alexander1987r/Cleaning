@@ -1,0 +1,185 @@
+.promo {
+  padding: 49px 0 60px 0;
+}
+.promo__container{
+  position: relative;
+}
+.promo__image{
+  position: absolute;
+  width: 241px;
+  height: 246px;
+  top: 189px;
+  right: 10px;
+  background-image: url(./../images/promo/girl.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position:center;
+  z-index: -1;
+}
+.promo__title {
+  font-size: 34px;
+  margin-bottom: 36px;
+  max-width: 340px;
+  line-height: 1.3;
+}
+.promo__list {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo__item {
+  display: flex;
+  flex-direction: column;
+  padding-left: 33px;
+  background-image: url(./../images/promo/dots.svg);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: 25px 25px;
+}
+.promo__item b {
+  color: var(--zelenyy);
+}
+.promo__item:first-child{
+  margin-bottom: 52px;
+  margin-right: 68px;
+}
+.promo__item:nth-child(2){
+  margin-bottom: 77px;
+  margin-right: 200px;
+}
+.promo__item:last-child{
+  flex-direction: row;
+  margin-right: 84px;
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form__title {
+  font-weight: 700;
+  font-size: 19px;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+.form__content{
+  width: 100%;
+  display: flex;
+  margin-bottom: 5px;
+}
+.form__input {
+  border: 1px solid var(--seryy);
+  border-radius: 11px;
+  padding: 0 25px;
+  font-size: 12px;
+  margin-right: 12px;
+}
+.form__text {
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--seryy);
+  max-width: 260px;
+}
+@media(min-width:768px){
+  .promo {
+    padding: 61px 0 80px 0;
+  }
+  .promo__image{
+    width: 454px;
+    height: 464px;
+    top: 77px;
+    right: 10px;
+    background-image: url(./../images/promo/girl-tablet.png);
+  }
+  .promo__title {
+    font-size: 50px;
+    margin-bottom:176px;
+    max-width: 580px;
+    letter-spacing: 2.4px;
+  }
+  .promo__list {
+    margin-bottom:0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+  }
+  .promo__item {
+    padding-left: 44px;
+    background-size: 36px 36px;
+    font-size: 20px;
+    margin-right: 22px;
+  }
+  .promo__item b {
+    color: var(--zelenyy);
+  }
+  .promo__item:first-child{
+    margin-bottom: 53px;
+    margin-right: 289px;
+  }
+  .promo__item:nth-child(2){
+    margin-right: 21px;
+    margin-bottom: 128px;
+    order: -1;
+  }
+  .promo__item:last-child{
+    margin-right:450px;
+  }
+  .form {
+    width: 502px;
+  }
+  .form__title {
+    font-size: 23px;
+    margin-bottom:24px;
+    max-width: 236px;
+    line-height: 1.4;
+  }
+  .form__input{
+    width: 304px;
+  }
+  .form__text {
+    font-size: 12px;
+    max-width: 314px;
+  }
+}
+@media(min-width:1920px){
+  .promo {
+    padding:149px 0 152px 0;
+  }
+  .promo__image{
+    width: 660px;
+    height: 674px;
+    top: -76px;
+    right: 0;
+    background-image: url(./../images/promo/girl-desk.png);
+  }
+  .promo__title {
+    font-size: 64px;
+    margin-bottom:93px;
+    max-width: 740px;
+  }
+  .promo__list {
+    top: -82px;
+    right: 0;
+  }
+  .promo__item {
+    padding-left: 44px;
+    margin-right: 10px;
+  }
+
+  .promo__item:first-child{
+    margin-bottom: 171px;
+    margin-right: 311px;
+  }
+  .promo__item:nth-child(2){
+    margin-bottom: 10px;
+    margin-right: 11px;
+  }
+  .promo__item:last-child{
+    margin-right:665px;
+  }
+}

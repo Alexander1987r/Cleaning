@@ -1,0 +1,151 @@
+.price {
+  background: linear-gradient(327deg, #2d9aff 0%, #e3f1ff 100%);
+  padding: 60px 0 49px 0;
+}
+.price__container{
+  position: relative;
+  z-index: 1;
+}
+.price__title {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.price__text {
+  font-weight: 700;
+  max-width: 173px;
+  margin-bottom: 62px;
+}
+.price__picture{
+  position: absolute;
+  top: 24px;
+  right: 7px;
+  z-index: -1;
+}
+.price__image {
+  width: 176px;
+  height: 229px;
+}
+.price__form-field {
+  display: flex;
+  margin-bottom: 8px;
+}
+.price__form-title {
+  font-size: 14px;
+  max-width: 137px;
+}
+.price__form-label {
+  margin-right: 10px;
+}
+.input-social {
+  display: none;
+}
+.price__form-social{
+  cursor: pointer;
+  display: block;
+  width: 71px;
+  height: 40px;
+  border: 0.78px solid var(--seryy);
+  border-radius: 13px;
+  padding: 21px 38px;
+  background-color: white;
+  background-image: url(./../images/price/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 27px 27px;
+}
+.price__form-social_teleg{
+  background-image: url(./../images/price/telegran.svg);
+}
+.price__form-number {
+  border: 1px solid var(--seryy);
+  border-radius: 11px;
+  font-size: 12px;
+  padding: 11px 20px;
+  width: 304px;
+  margin-bottom: 8px;
+}
+.price__form-button {
+  font-size: 12px;
+  background-color: #0f4f8a;
+  color: white;
+  border-radius: 11px;
+  padding: 14px 0;
+  width: 304px;
+  margin-bottom: 8px;
+}
+.price__form-copyright {
+  display: block;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 1.4;
+  color: var(--seryy);
+  max-width: 325px;
+}
+@media(min-width:768px){
+  .price {
+    padding: 80px  0 99px 0;
+  }
+  .price__title {
+    font-size: 40px;
+    margin-bottom: 32px;
+  }
+  .price__text {
+    font-size: 20px;
+    text-align: center;
+    min-width: 100%;
+    margin-bottom: 87px;
+  }
+  .price__picture{
+    top: 69px;
+    right: 16px;
+  }
+  .price__image {
+    width: 394px;
+    height: 480px;
+  }
+  .price__form-title {
+    font-size: 16px;
+  }
+  .price__form-label:last-of-type {
+   margin-right: 20px;
+  }
+  .price__form-social{
+    width: 90px;
+    height: 51px;
+    background-size: 35px 35px;
+  }
+  .price__form-number {
+    font-size: 16px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+  }
+  .price__form-button {
+    font-size: 16px;
+    padding: 16px 0;
+    margin-bottom: 10px;
+  }
+  .price__form-copyright {
+    font-size: 12px;
+  }
+}
+@media(min-width:1920px){
+  .price {
+    padding: 145px  0 113px 0;
+  }
+  .price__title {
+    text-align: start;
+  }
+  .price__text {
+    text-align: start;
+    margin-bottom: 40px;
+  }
+  .price__picture{
+    top: -105px;
+    right: -26px;
+  }
+  .price__image {
+    width: 520px;
+    height: 628px;
+  }
+}

@@ -1,0 +1,115 @@
+.description {
+  padding: 60px 0;
+  background-color: #f0f8ff;
+}
+.description__container{
+  padding: 0 31px;
+}
+.description__title {
+  width: 186px;
+  margin: 0 auto 39px auto;
+}
+.description__image {
+  width: 298px;
+  height: 228px;
+  margin: 0 auto 30px auto;
+}
+.description__card:not(:last-child) {
+margin-bottom: 24px;
+}
+.description__card-title {
+  font-weight: 600;
+  font-size: 18px;
+  background: #c0e1ff;
+  text-align: center;
+  border: 1px solid var(--goluboy);
+  border-radius: 8px 8px 0 0;
+  padding: 23px 24px;
+}
+.description__card-title br{
+  display: none;
+}
+.description__card-text {
+  display: block;
+  border: 1px solid var(--svetlo-seryy);
+  border-radius: 0 0 8px 8px;
+  padding: 12px;
+}
+@media(min-width:768px){
+  .description {
+    padding: 80px 0 94px 0;
+  }
+  .description__container{
+    padding: 0 10px;
+  }
+  .description__title {
+    width: 500px;
+    margin: 0 auto 18px auto;
+    line-height: 1.4;
+  }
+  .description__image {
+    width: 387px;
+    height: 311px;
+    margin: 0 auto 24px auto;
+  }
+  .description__cards{
+   display: flex;
+   gap: 29px;
+  }
+  .description__card:not(:last-child) {
+    margin-bottom:0;
+  }
+  .description__card-title {
+    font-size: 22px;
+    border-radius: 16px 16px 0 0;
+    padding: 10px 24px;
+  }
+  .description__card-title br{
+    display: block;
+  }
+  .description__card-text {
+    border-radius: 0 0 16px 16px;
+    padding: 12px 10px 12px 12px;
+  }
+}
+@media(min-width:1920px){
+  .description {
+    padding: 50px 100px 96px 100px;
+  }
+  .description__container{
+    padding: 0;
+    display: grid;
+    grid-template-columns: 755px 1fr;
+    grid-column-gap:56px ;
+  }
+  .description__title {
+    grid-column: 1/-1;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: start;
+  }
+  .description__image {
+    width: 755px;
+    height: 578px;
+    margin: 0;
+  }
+  .description__cards{
+    display: block;
+    gap:0;
+    margin-top: -15px;
+   }
+   .description__card:not(:last-child) {
+     margin-bottom:26px;
+   }
+   .description__card-title {
+     padding: 20px 24px;
+   }
+   .description__card-title br{
+     display: none;
+   }
+   .description__card-text {
+     padding: 20px;
+     font-size: 20px;
+   }
+}

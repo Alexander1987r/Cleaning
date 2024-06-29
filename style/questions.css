@@ -1,0 +1,112 @@
+.questions {
+  padding: 60px 0;
+}
+
+.questions__title {
+ font-size: 28px;
+ text-align: center;
+ margin-bottom: 31px;
+ line-height: 1.3;
+}
+.questions__list  .ac .ac-trigger {
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  position: absolute;
+  top: 16px;
+  right:17px;
+  padding:0;
+  background-color: var(--goluboy);
+  background-image: url(./../images/gallery/влево.svg);
+  background-position:center;
+  transform: rotate(-90deg);
+}
+.questions__list-wrapper.ac {
+  margin-top:0;
+  border: 1px solid var(--svetlo-seryy);
+  border-radius: 12px;
+  padding: 20px 16px 16px 16px;
+  position: relative;
+}
+.questions__list-wrapper.ac.is-active button{
+  transition: all 1s ease-in-out;
+  transform: rotate(90deg);
+}
+.questions__list-wrapper.ac:not(:last-child){
+  margin-bottom: 8px;
+}
+.ac .ac-trigger::after{
+  content: "";
+}
+.ac.is-active>.ac-header .ac-trigger::after {
+  content: "";
+}
+.questions__list-title {
+ font-weight: 400;
+ font-size: 14px;
+ color: var(--chernyy);
+ max-width: 270px;
+}
+.questions__list .ac .ac-panel .ac-text {
+  font-family: var(--font-family);
+  color: var(--chernyy);
+  padding-top: 17px;
+  margin: 0;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--chernyy);
+}
+.questions__list .ac .ac-panel .ac-text span{
+  display: block;
+  padding: 10px;
+}
+@media(min-width:768px){
+  .questions {
+    padding: 80px 0;
+  }
+  .questions__title {
+    font-size: 40px;
+    margin-bottom: 40px;
+   }
+   .questions__list-wrapper.ac {
+    border-radius: 16px;
+    padding: 24px;
+  }
+  .questions__list-wrapper.ac:not(:last-child){
+    margin-bottom: 12px;
+  }
+  .questions__list  .ac .ac-trigger {
+    width: 44px;
+    height: 44px;
+    top: 11px;
+    right:24px;
+  }
+  .questions__list-title {
+    font-size: 20px;
+    max-width: 100%;
+   }
+   .questions__list-title_four{
+    max-width: 380px;
+   }
+
+   .questions__list-title br {
+   display: none;
+}
+   .questions__list .ac .ac-panel .ac-text {
+    padding-top: 17px;
+    font-size: 18px;
+  }
+  .questions__list .ac .ac-panel .ac-text span{
+    padding: 20px;
+  }
+
+}
+@media(min-width:1920px){
+  .questions {
+    padding: 100px 0;
+  }
+}
+
+
+
